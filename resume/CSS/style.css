@@ -4,16 +4,17 @@
 }
 
 body {
-  background: pink;
+  background: #4EF4E6;
+
 
 
 }
 
 .container {
   background: white;
-  width: 65%;
+  width: 70%;
   margin: auto;
-  padding: 0 20px;
+  padding: 20px;
   overflow: auto;
 }
 
@@ -22,10 +23,88 @@ li {
 }
 
 .bio {
-  float: right;
+  float: left;
   display: block;
+  text-align: center;
+  font-family: monospace;
+  font-size: 15px;
+
 }
 
-.resume-content {
+.topleft {
+  text-align: left;
   float: left;
+  width: 30%;
+
+}
+
+
+.resume-content {
+  margin-top: 80px;
+  float: right;
+}
+
+.section {
+  font-family: monospace;
+  font-size: 12px;
+  width: 65%;
+  float: right;
+  text-align: left;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: lighter;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  text-decoration: underline;
+
+}
+
+#objective {
+  font-size: 15px;
+  text-align: center;
+  font-family: monospace;
+
+}
+
+
+#ellie {
+  color: black;
+  background: #2CF6B3;
+}
+
+#bofa {
+  color: black;
+  background: #92FFDF;
+}
+
+#education {
+  color: black;
+  background: #45F0DF;
+}
+
+#tech-skills {
+  color: black;
+  background: #60FFB2;
+}
+
+#science {
+  color: black;
+  background: #A3E6FF;
+}
+
+#sms {
+  color: black;
+  background: #75F4F4;
+}
+
+.job {
+  text-align: justify;
+  padding: 15px;
+
 }
