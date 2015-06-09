@@ -18,6 +18,7 @@ nav a {
   margin-right: 5px;
   font-weight: lighter;
 
+
 }
 
 p::first-letter {
@@ -57,6 +58,7 @@ img {
 
 h1, h2, h3 {
   margin:0;
+  margin-top: 30px;
 }
 
 
@@ -64,7 +66,6 @@ h1, h2, h3 {
 h1 a {
   color: red;
   font-weight: 100;
-
 }
 
 a {
@@ -94,6 +95,9 @@ article {
 .subhead {
   font-size: 15px;
   font-weight: 100;
-  margin: 8px 0px;
+  position: relative;
+}
 
+.about-us {
+  float: left;
 }

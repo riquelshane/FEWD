@@ -12,6 +12,7 @@ body {
   width: 80%;
   margin: auto;
   padding: 20px;
+  padding-bottom: 200%;
   overflow: auto;
 
 }
@@ -28,20 +29,12 @@ li {
   font-size: 15px;
   padding-bottom: 10%;
   padding-left: 18%;
-
 }
 
 .topleft {
   text-align: left;
   float: left;
   width: 30%;
-
-}
-
-
-.resume-content {
-  margin-top: 80px;
-  float: right;
 }
 
 .section {
@@ -52,57 +45,14 @@ li {
   text-align: left;
 }
 
-h4 {
-  font-size: 20px;
-  font-weight: lighter;
-  text-decoration: underline;
-  padding-bottom: 2%;
-}
-
 h3 {
   font-size: 27px;
   font-weight: lighter;
   text-decoration: underline;
   padding-bottom: 2%;
-
-
-}
-
-#objective {
-  font-size: 18px;
-  text-align: center;
-  font-family: monospace;
-  width: 110%;
-
-}
-
-
-#ellie {
-  color: black;
-  background: #2CF6B3;
-}
-
-#bofa {
-  color: black;
-  background: #92FFDF;
-}
-
-#education {
-  color: black;
-  background: #45F0DF;
 }
 
 #tech-skills {
-  color: black;
-  background: #60FFB2;
-}
-
-#science {
-  color: black;
-  background: #A3E6FF;
-}
-
-#sms {
   color: black;
   background: #75F4F4;
 }
@@ -110,9 +60,4 @@ h3 {
 .job {
   text-align: justify;
   padding: 15px;
-
-}
-
-.ed-tech {
-  font-size: 20px;
 }
