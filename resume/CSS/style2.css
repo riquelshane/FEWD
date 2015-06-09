@@ -40,8 +40,8 @@ li {
 .section {
   font-family: monospace;
   font-size: 14px;
-  width: 65%;
-  float: right;
+  width: 45%;
+  float: left;
   text-align: left;
 }
 
