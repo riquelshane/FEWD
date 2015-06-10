@@ -4,38 +4,47 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+/****** I DONT THINK THIS IS NEEDED BUT NOT SURE.
 title {
   color: #FF1000;
   padding-left: 45px;
 }
+*/
 
 
+/* I NEED TO GET THIS SECTION TO MOVE DOWN!*/
 nav a {
   color: #CECECE;
   font-family: 'Open Sans', sans-serif;
-  text-decoration: underline;
   font-size: 12px;
-  margin-right: 5px;
+  margin-right: 0.1px;
   font-weight: lighter;
-
-
+  background: black;
+  padding: 10px;
+  width: 40%;
 }
 
-p::first-letter {
+
+/*p::first-letter {
   font-size: 55px;
   font-weight: 300;
   color: #CECECE;
   float: left;
   margin-right: 5px;
   font-family: 'Lato', sans-serif;
+} */
+
+.about-us {
+  float:right;
+  width: 40%;
 }
 
 p {
 color: grey;
 font-size: 12px;
-text-align: left;
-display: block;
 }
+
+
 
 img {
   width: 100%;
@@ -61,7 +70,14 @@ h1, h2, h3 {
   margin-top: 30px;
 }
 
-
+.subhead {
+  font-size: 18px;
+  color: grey;
+  font-weight: 100;
+  position: absolute;
+  right: 63%;
+  top: 12.5px;
+}
 
 h1 a {
   color: red;
@@ -71,6 +87,7 @@ h1 a {
 a {
   text-decoration: none;
   color: black;
+  padding-top: 20px;
 }
 
 h2 {
@@ -90,14 +107,4 @@ h2 {
 article {
   border-bottom: 1px solid black;
   width: 40%;
-}
-
-.subhead {
-  font-size: 15px;
-  font-weight: 100;
-  position: relative;
-}
-
-.about-us {
-  float: left;
 }
