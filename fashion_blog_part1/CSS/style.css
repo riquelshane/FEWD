@@ -17,14 +17,19 @@ nav a {
   color: #CECECE;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  margin-right: 0.1px;
   font-weight: lighter;
   background: black;
   padding: 10px;
-  width: 40%;
-  padding-top: 10px;
+  width: 16.66%;
+  display: inline-block;
 }
 
+nav {
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+
+}
 
 /*p::first-letter {
   font-size: 55px;
