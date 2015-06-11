@@ -22,6 +22,7 @@ nav a {
   background: black;
   padding: 10px;
   width: 40%;
+  padding-top: 10px;
 }
 
 
@@ -34,14 +35,15 @@ nav a {
   font-family: 'Lato', sans-serif;
 } */
 
-.about-us {
-  float:right;
-  width: 40%;
-}
+h5 {
+  position: absolute;
+  right: 50%;
+  top: 20%;
+  }
 
 p {
-color: grey;
-font-size: 12px;
+  color: grey;
+  font-size: 12px;
 }
 
 
@@ -57,7 +59,7 @@ img {
   font-family: 'Lato', sans-serif;
 }
 
-.above-image {
+.left-side {
   color: black;
   margin: 8px 0px;
   font-size: 18px;
@@ -75,7 +77,7 @@ h1, h2, h3 {
   color: grey;
   font-weight: 100;
   position: absolute;
-  right: 63%;
+  right: 70%;
   top: 12.5px;
 }
 
