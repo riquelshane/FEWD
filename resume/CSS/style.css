@@ -4,7 +4,7 @@
 }
 
 body {
-  background: #ABABAB;
+  background: #DBEDFF;
 }
 
 .container {
@@ -24,10 +24,11 @@ li {
   float: left;
   display: block;
   text-align: center;
-  font-family: monospace;
+  font-family: 'Oxygen', sans-serif;
   font-size: 15px;
   padding-bottom: 10%;
   padding-left: 18%;
+  font-family: 'Oxygen', sans-serif;
 
 }
 
@@ -45,7 +46,7 @@ li {
 }
 
 .section {
-  font-family: monospace;
+  font-family: 'Oxygen', sans-serif;
   font-size: 14px;
   width: 65%;
   float: right;
@@ -69,10 +70,10 @@ h3 {
 }
 
 #objective {
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
-  font-family: monospace;
-  width: 110%;
+  font-family: 'Oxygen', sans-serif;
+  width: 100%;
 
 }
 
