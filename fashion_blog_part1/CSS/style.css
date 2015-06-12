@@ -1,6 +1,5 @@
 body {
   padding-left: 45px;
-  text-align: left;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -20,14 +19,21 @@ nav a {
   font-weight: lighter;
   background: black;
   padding: 10px;
-  width: 16.66%;
-  display: inline-block;
+  display: inline;
 }
 
 nav {
   margin-top: 10px;
-  text-align: center;
-  width: 100%;
+  float: left;
+  width: 90%;
+  padding-bottom: 50px;
+
+}
+
+.above-image {
+  font-weight: lighter;
+  font-size: 20px;
+  color: #8c8c8c;
 
 }
 
@@ -40,17 +46,14 @@ nav {
   font-family: 'Lato', sans-serif;
 } */
 
-h5 {
-  position: absolute;
-  right: 50%;
-  top: 20%;
-  }
-
-p {
-  color: grey;
-  font-size: 12px;
+.section-1 {
 }
 
+li {
+  color: red;
+  width: 80%;
+
+  }
 
 
 img {
@@ -65,16 +68,12 @@ img {
 }
 
 .left-side {
-  color: black;
-  margin: 8px 0px;
-  font-size: 18px;
-  font-weight: lighter;
-  font-family: 'Open Sans', sans-serif;
+
 }
 
 h1, h2, h3 {
   margin:0;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .subhead {
@@ -115,3 +114,60 @@ article {
   border-bottom: 1px solid black;
   width: 40%;
 }
+
+p {
+  font-size: 12px;
+  color: grey;
+}
+
+h5 {
+  position: absolute;
+  right: 50%;
+  top: 12%;
+  color: grey;
+  }
+
+  h6 {
+    position: absolute;
+    right: 45%;
+    text-align: left;
+    top: 12%;
+    width: 15%;
+    color: grey;
+    }
+
+
+#right-side {
+  float:right;
+  left: 45%;
+  top: 15%;
+  width: 15%;
+}
+
+.about-text {
+  position: absolute;
+  left: 45%;
+  top: 15%;
+  width: 15%;
+
+  }
+
+  ul {
+    position: absolute;
+    right:35%;
+    top: 50%;
+    font-size: 12px;
+    font-weight: lighter;
+  }
+
+  .ad-box {
+    background: grey;
+    height: 170px;
+    width: 190px;
+    position: absolute;
+    right: 40%;
+    top: 30%;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+
+  }
