@@ -3,15 +3,6 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/****** I DONT THINK THIS IS NEEDED BUT NOT SURE.
-title {
-  color: #FF1000;
-  padding-left: 45px;
-}
-*/
-
-
-/* I NEED TO GET THIS SECTION TO MOVE DOWN!*/
 nav a {
   color: #CECECE;
   font-family: 'Open Sans', sans-serif;
@@ -19,15 +10,20 @@ nav a {
   font-weight: lighter;
   background: black;
   padding: 10px;
-  display: inline;
+  display: inline-block;
+  width: 13.66%;
+  margin-right: -3px;
+  text-align: center;
 }
 
 nav {
   margin-top: 10px;
   float: left;
-  width: 90%;
-  padding-bottom: 50px;
+  width: 100%;
+}
 
+h1 {
+  float: left;
 }
 
 .above-image {
@@ -37,14 +33,14 @@ nav {
 
 }
 
-/*p::first-letter {
+article p::first-letter {
   font-size: 55px;
   font-weight: 300;
-  color: #CECECE;
+  color: #bebebe;
   float: left;
   margin-right: 5px;
   font-family: 'Lato', sans-serif;
-} */
+}
 
 .section-1 {
 }
@@ -61,7 +57,7 @@ img {
 }
 
 .date {
-  color: #CECECE;
+  color: #bebebe;
   margin-top: 30px;
   font-weight: lighter;
   font-family: 'Lato', sans-serif;
@@ -80,9 +76,9 @@ h1, h2, h3 {
   font-size: 18px;
   color: grey;
   font-weight: 100;
-  position: absolute;
-  right: 70%;
-  top: 12.5px;
+  position: relative;
+  top: 22px;
+  left: 20px;
 }
 
 h1 a {
@@ -111,8 +107,7 @@ h2 {
 }
 
 article {
-  border-bottom: 1px solid black;
-  width: 40%;
+  border-bottom: 2px solid #bebebe;
 }
 
 p {
@@ -121,53 +116,66 @@ p {
 }
 
 h5 {
-  position: absolute;
-  right: 50%;
-  top: 12%;
   color: grey;
   }
 
-  h6 {
-    position: absolute;
-    right: 45%;
-    text-align: left;
-    top: 12%;
-    width: 15%;
-    color: grey;
-    }
+#left-side {
+  float: left;
+  width: 60%;
+}
 
 
 #right-side {
-  float:right;
-  left: 45%;
-  top: 15%;
-  width: 15%;
+  float: left;
+  width: 30%;
+  margin-left: 5%;
+  margin-top: 5%;
 }
 
 .about-text {
-  position: absolute;
-  left: 45%;
-  top: 15%;
-  width: 15%;
+  border-bottom: 2px solid #bebebe;
+}
 
-  }
-
-  ul {
-    position: absolute;
-    right:35%;
-    top: 50%;
+ul {
     font-size: 12px;
     font-weight: lighter;
-  }
+}
 
-  .ad-box {
+.more {
+  display: block;
+  color: #FF1000;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: right;
+  position: left;
+  font-family: arial;
+}
+
+.ad-box {
     background: grey;
     height: 170px;
     width: 190px;
-    position: absolute;
-    right: 40%;
-    top: 30%;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    position: relative;
+    margin-bottom: 12px;
+}
 
-  }
+.popular-post {
+  border-top: 2px solid #bebebe;
+  padding-top: 5px;
+}
+
+footer {
+  float: left;
+  clear: both;
+  margin: 20px 0;
+}
+
+footer a {
+  color: red;
+  margin: 0 2px;
+  height: 2px;
+  text-decoration: underline;
+  font-weight: lighter;
+  font-size: 12px;
+
+}
