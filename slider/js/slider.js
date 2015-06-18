@@ -9,11 +9,7 @@ Element.prototype.slider = function(){
     var leftButton = document.createElement('div');
     var rightButton = document.createElement('div');
 
-
-    var init = function(){
-
-        wrapper.style.width = slides.length * width + 'px';
-        wrapper.style.height = '100%';
+    this.createButtons = function() {
 
         leftButton.classList.add('left');
         rightButton.classList.add('right');
@@ -21,24 +17,50 @@ Element.prototype.slider = function(){
         slider.appendChild(leftButton);
         slider.appendChild(rightButton);
 
-        for(var index=0; index<slides.length; index++) {
-            slides[index].style.width = width + 'px';
-        }
+        rightButton.addEventListener('mousedown',function(){
 
-        leftButton.addEventListener('mousedown',function(){
-            wrapper.style.marginLeft = width * position * -1 + 'px';
-            position = position + 1;
+          if(position > (width * (slides.length - 1)) * -1) {
+            position = position - width;
+            wrapper.style.marginLeft = position + 'px';
+          }
+
         });
 
-        rightButton.addEventListener('mousedown', function(){
-            wrapper.style.marginLeft = width * position * -1+'px';
-            position = position + 1;
+        leftButton.addEventListener('mousedown', function(){
+
+          if(position < 0){
+            position = position + width;
+            wrapper.style.marginLeft = position +'px';
+          }
 
         });
 
     };
 
-    init();
+    this.resize = function(){
+
+      width = window.innerWidth;
+
+      wrapper.style.width = slides.length * width + 'px';
+      wrapper.style.height = '100%';
+
+      for(var index=0; index<slides.length; index++) {
+          slides[index].style.width = width + 'px';
+      }
+
+
+    };
+
+     this.init = function(){
+
+       this.createButtons();
+       this.resize();
+
+       window.addEventListener('resize',slider.resize);
+
+    };
+
+    this.init();
 
 
 };
