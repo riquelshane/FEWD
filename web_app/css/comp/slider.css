@@ -2,6 +2,8 @@
 
   overflow-y:hidden;
   overflow-x:scroll;
+  -webkit-transition: all 1.2s; /* Safari */
+  transition: all 1.2s;
 
 }
 .slider ul{
@@ -36,6 +38,8 @@
   -ms-transform: rotate(90deg); /* IE 9 */
   -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
   transform: rotate(90deg);
+  -webkit-transition: all 1.2s; /* Safari */
+  transition: all 1.2s;
 }
 
 .slider .right{
@@ -44,4 +48,15 @@
   -ms-transform: rotate(-90deg); /* IE 9 */
   -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
   transform: rotate(-90deg);
+}
+
+#burger {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: url('../../img/hamburger.svg');
+  width: 25px;
+  height: 25px;
+  -webkit-transition: all 1.2s; /* Safari */
+  transition: all 1.2s;
 }

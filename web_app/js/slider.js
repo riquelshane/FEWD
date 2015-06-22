@@ -12,13 +12,13 @@ Element.prototype.Slider = function(){
   var slider = this,
       wrapper = slider.children[0],
       slides = wrapper.children,
-      // initialize position, width
       position = 0,
       width = window.innerWidth,
-      // create two divs for buttons
       leftBtn = document.createElement('div'),
-      rightBtn = document.createElement('div');
-
+      rightBtn = document.createElement('div'),
+      burger = document.getElementById('burger'),
+      wholeSlider = document.getElementById('slider'),
+      sliderPosition = 0;
   // Create buttons for sliding the Slider left and right
 
   this.createButtons = function(){
@@ -42,6 +42,21 @@ Element.prototype.Slider = function(){
         position = position + width;
         wrapper.style.marginLeft = position + "px";
       }
+    });
+
+    burger.addEventListener('mousedown', function(){
+      if(sliderPosition === 200){
+        wholeSlider.style.marginLeft = "0px";
+        burger.style.marginLeft = "0px";
+        leftBtn.style.marginLeft = "0px";
+        sliderPosition = 0;
+      } else {
+        wholeSlider.style.marginLeft = "200px";
+        burger.style.marginLeft = "200px";
+        leftBtn.style.marginLeft = "200px";
+        sliderPosition = 200;
+      }
+
     });
 
     // append the buttons to the Slider
