@@ -45,16 +45,16 @@ Element.prototype.Slider = function(){
     });
 
     burger.addEventListener('mousedown', function(){
-      if(sliderPosition === 200){
+      if(sliderPosition === 0){
+        wholeSlider.style.marginLeft = "200px";
+        burger.style.marginLeft = "200px";
+        leftBtn.style.marginLeft = "200px";
+        sliderPosition =200;
+      } else {
         wholeSlider.style.marginLeft = "0px";
         burger.style.marginLeft = "0px";
         leftBtn.style.marginLeft = "0px";
         sliderPosition = 0;
-      } else {
-        wholeSlider.style.marginLeft = "200px";
-        burger.style.marginLeft = "200px";
-        leftBtn.style.marginLeft = "200px";
-        sliderPosition = 200;
       }
 
     });
