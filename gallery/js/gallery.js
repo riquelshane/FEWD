@@ -1,24 +1,45 @@
 //Define prototypical Gallery function
 Element.prototype.Gallery = function(){
   var gallery = this;
+  var slider = document.getElementById('slider');
   var ul = gallery.children[0];
   var photos = {};
 
   // Define global variables
 
   this.singlePhoto = function(ev) {
-    document.getElementById('largeImg').src = gallery.children;
+    //document.getElementById('largeImg').src = gallery.children;
+    var singlePhotoSection = document.getElementById('single-photo');
+    //var largeImg = document.getElementById('largeImg');
 
+    singlePhotoSection.style.backgroundImage = ev.target.style.backgroundImage;
+    singlePhotoSection.style.display = 'block';
+    singlePhotoSection.style.opacity = 1;
+
+    singlePhotoSection.innerHTML = '<div id="close" class="close"></div>'+
+      ev.target.innerHTML;
+
+
+    var closeBtn = document.getElementById('close');
+    closeBtn.addEventListener('mousedown',closeSinglePhoto);
+
+    gallery.style.display = 'none';
+    slider.style.display = 'none';
+
+    function closeSinglePhoto(){
+      gallery.style.display = 'block';
+      slider.style.display = 'block';
+      singlePhotoSection.style.display = 'none';
     }
-    console.log(ev);
 
   };
+
 
   this.layoutPhotos = function(){
       // add logic for each photo in here
       photos.forEach(function(photo,index){
 
-        console.log(photo);
+        //console.log(photo);
         var li = document.createElement('li');
 
         li.style.backgroundImage = 'url("'+photo.image_url+'")';
