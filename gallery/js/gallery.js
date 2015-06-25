@@ -13,12 +13,14 @@ Element.prototype.Gallery = function(){
       console.log(ev.target.style.backgroundImage);
 
     var section = document.createElement('section');
+
     section.classList.add('single-photo');
+
     section.innerHTML = ev.target.innerHTML;
     section.style.backgroundImage = ev.target.style.backgroundImage;
     section.style.backgroundRepeat = 'no-repeat';
     section.style.backgroundSize = 'contain';
-    section.style.backgroudPosotion = '100%';
+    section.style.backgroudPosition = '100%';
     section.style.height = '100%';
 
     var closeButton = document.createElement('div');
@@ -28,7 +30,7 @@ Element.prototype.Gallery = function(){
       section.style.display = 'none';
 
     });
-
+    
     section.appendChild(closeButton);
     container.appendChild(section);
 
@@ -78,6 +80,8 @@ Element.prototype.Gallery = function(){
             '<h6></div><div class="stats"><div>'+
             photo.rating+'</div></div>'+
             '</div>';
+
+        li.dataset.description = photo.description;
 
         li.addEventListener('mousedown',gallery.singlePhoto);
 
