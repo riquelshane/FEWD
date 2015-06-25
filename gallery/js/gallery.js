@@ -4,35 +4,61 @@ Element.prototype.Gallery = function(){
   var slider = document.getElementById('slider');
   var ul = gallery.children[0];
   var photos = {};
+  var container = document.getElementById('container');
 
   // Define global variables
 
   this.singlePhoto = function(ev) {
-    //document.getElementById('largeImg').src = gallery.children;
-    var singlePhotoSection = document.getElementById('single-photo');
-    //var largeImg = document.getElementById('largeImg');
 
-    singlePhotoSection.style.backgroundImage = ev.target.style.backgroundImage;
-    singlePhotoSection.style.display = 'block';
-    singlePhotoSection.style.opacity = 1;
+      console.log(ev.target.style.backgroundImage);
 
-    singlePhotoSection.innerHTML = '<div id="close" class="close"></div>'+
-      ev.target.innerHTML;
+    var section = document.createElement('section');
+    section.classList.add('single-photo');
+    section.innerHTML = ev.target.innerHTML;
+    section.style.backgroundImage = ev.target.style.backgroundImage;
+    section.style.backgroundRepeat = 'no-repeat';
+    section.style.backgroundSize = 'contain';
+    section.style.backgroudPosotion = '100%';
+    section.style.height = '100%';
 
+    var closeButton = document.createElement('div');
+    closeButton.classList.add('close');
 
-    var closeBtn = document.getElementById('close');
-    closeBtn.addEventListener('mousedown',closeSinglePhoto);
+    closeButton.addEventListener('click',function(){
+      section.style.display = 'none';
 
-    gallery.style.display = 'none';
-    slider.style.display = 'none';
+    });
 
-    function closeSinglePhoto(){
-      gallery.style.display = 'block';
-      slider.style.display = 'block';
-      singlePhotoSection.style.display = 'none';
-    }
+    section.appendChild(closeButton);
+    container.appendChild(section);
+
 
   };
+    //document.getElementById('largeImg').src = gallery.children;
+    // var singlePhotoSection = document.getElementById('single-photo');
+    //var largeImg = document.getElementById('largeImg');
+
+    // singlePhotoSection.style.backgroundImage = ev.target.style.backgroundImage;
+    // singlePhotoSection.style.display = 'block';
+    // singlePhotoSection.style.opacity = 1;
+    //
+    // singlePhotoSection.innerHTML = '<div id="close" class="close"></div>'+
+    //   ev.target.innerHTML;
+
+
+  //   var closeBtn = document.getElementById('close');
+  //   closeBtn.addEventListener('mousedown',closeSinglePhoto);
+  //
+  //   gallery.style.display = 'none';
+  //   slider.style.display = 'none';
+  //
+  //   function closeSinglePhoto(){
+  //     gallery.style.display = 'block';
+  //     slider.style.display = 'block';
+  //     singlePhotoSection.style.display = 'none';
+  //   }
+  //
+  // };
 
 
   this.layoutPhotos = function(){
