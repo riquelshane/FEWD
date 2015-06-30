@@ -30,38 +30,12 @@ Element.prototype.Gallery = function(){
       section.style.display = 'none';
 
     });
-    
+
     section.appendChild(closeButton);
     container.appendChild(section);
 
 
   };
-    //document.getElementById('largeImg').src = gallery.children;
-    // var singlePhotoSection = document.getElementById('single-photo');
-    //var largeImg = document.getElementById('largeImg');
-
-    // singlePhotoSection.style.backgroundImage = ev.target.style.backgroundImage;
-    // singlePhotoSection.style.display = 'block';
-    // singlePhotoSection.style.opacity = 1;
-    //
-    // singlePhotoSection.innerHTML = '<div id="close" class="close"></div>'+
-    //   ev.target.innerHTML;
-
-
-  //   var closeBtn = document.getElementById('close');
-  //   closeBtn.addEventListener('mousedown',closeSinglePhoto);
-  //
-  //   gallery.style.display = 'none';
-  //   slider.style.display = 'none';
-  //
-  //   function closeSinglePhoto(){
-  //     gallery.style.display = 'block';
-  //     slider.style.display = 'block';
-  //     singlePhotoSection.style.display = 'none';
-  //   }
-  //
-  // };
-
 
   this.layoutPhotos = function(){
       // add logic for each photo in here
