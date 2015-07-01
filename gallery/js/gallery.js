@@ -10,7 +10,7 @@ Element.prototype.Gallery = function(){
 
   this.singlePhoto = function(ev) {
 
-      console.log(ev.target.style.backgroundImage);
+    //  console.log(ev.target.style.backgroundImage);
 
     var section = document.createElement('section');
 
@@ -41,7 +41,7 @@ Element.prototype.Gallery = function(){
       // add logic for each photo in here
       photos.forEach(function(photo,index){
 
-        //console.log(photo);
+        // console.log(photo.tags);
         var li = document.createElement('li');
 
         li.style.backgroundImage = 'url("'+photo.image_url+'")';
@@ -55,6 +55,7 @@ Element.prototype.Gallery = function(){
             photo.rating+'</div></div>'+
             '</div>';
 
+        li.dataset.tags = photo.tags;
         li.dataset.description = photo.description;
 
         li.addEventListener('mousedown',gallery.singlePhoto);
