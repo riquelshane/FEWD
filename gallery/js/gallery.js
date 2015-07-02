@@ -37,6 +37,36 @@ Element.prototype.Gallery = function(){
 
   };
 
+  this.filterPhotos = function(query) {
+    for( var i=0;i<ul.children.length; i++ ){
+      var tags = ul.children[i].dataset.tags;// grab the tags!
+
+      var arr = tags.split(',');
+      var matched = false;
+
+      arr.forEach(function(tag){
+        if(tag === query){ // check if the tag is equal to the query
+          ul.children[i].style.display = 'block'; // if there is a match show the li
+          matched = true;
+        }
+
+      });
+
+      if(matched === false){
+        ul.children[i].style.display = 'none';
+      }
+
+      if (query === 'all'){
+        ul.children[i].style.display = 'block';
+      }
+      // if there isnt a match, hide the li
+    }
+
+
+  };
+
+
+
   this.layoutPhotos = function(){
       // add logic for each photo in here
       photos.forEach(function(photo,index){
@@ -55,8 +85,15 @@ Element.prototype.Gallery = function(){
             photo.rating+'</div></div>'+
             '</div>';
 
-        li.dataset.tags = photo.tags;
+        var tags = [];
+
+        photo.tags.forEach(function(tag){
+          tags.push(tag.toLowerCase());
+        });
+
+        li.dataset.tags = tags;
         li.dataset.description = photo.description;
+
 
         li.addEventListener('mousedown',gallery.singlePhoto);
 
