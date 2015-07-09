@@ -1,52 +1,90 @@
-body {
-  background-color: green;
+* {
+  margin:0;
+  padding:0;
 }
 
 h1 {
   font-size: 40px;
   color: white;
   text-align: center;
-  padding
-  }
-
-.flip-container {
-	perspective: 1000;
-}
-	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
-
-.flip-container, .front, .back {
-	width: 320px;
-	height: 480px;
 }
 
-/* flip speed goes here */
-.flipper {
-	transition: 0.6s;
-	transform-style: preserve-3d;
-
-	position: relative;
+body {
+  text-align:center;
+  background:green;
 }
 
-/* hide back of pane during swap */
-.front, .back {
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
+ul {
+  margin:auto;
+  text-align:left;
+  width:686px;
 }
 
-/* front pane, placed above back */
-.front {
-	z-index: 2;
-	/* for firefox 31 */
-	transform: rotateY(0deg);
+li {
+  list-style: none;
+  width: 106px;
+  height: 150px;
+  background-color: #fff;
+  margin: 5px 0 0 5px;
 }
 
-/* back, initially hidden pane */
-.back {
-	transform: rotateY(180deg);
+.card {
+  display: inline-block;
+  position: relative;
+}
+
+.card-back {
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/66035/bicycle-back.jpg');
+  background-size:cover;
+  /*background-color: #1e1e1e;*/
+}
+
+.card-front, .card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.card.flipped .card-back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.flipped .card-front {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+.card-front {
+  background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/66035/french-suits.svg');
+  background-color: #fff;
+  -webkit-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  background-repeat: no-repeat;
+  height: 97px;
+  position:relative;
+  top:50%;
+  margin-top:-48.5px;
+}
+
+.card.diamonds .card-front {
+  background-position: 12px -100px;
+}
+
+.card.clubs .card-front {
+  background-position: -100px -100px;
+}
+
+.card.hearts .card-front {
+  background-position: -100px 0px;
+}
+
+.card.spades .card-front {
+  background-position: 15px 0px;
 }
