@@ -1,15 +1,3 @@
-/*
-Project Name: Blank Template
-Client: Your Client
-Author: Your Name
-Developer @GA in NYC
-*/
-
-
-/******************************************
-/* SETUP
-/*******************************************/
-
 /* Box Model Hack */
 * {
      -moz-box-sizing: border-box; /* Firexfox */
@@ -17,30 +5,46 @@ Developer @GA in NYC
      box-sizing: border-box; /* IE */
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
 body {
-     color: #121212;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color:#121212;
+  line-height: 1.4;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  position: absolute;
+  width:100%;
+  height: 100%;
+  margin:0;
+  padding:0;
+  background: #223849;
+  font-size:16px;
 }
 
+#container {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  width: 66.66666667%;
+  margin-left: -33.33333333%;
+  perspective: 500px;
+  transform-style: preserve-3d;
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-/* Center the container */
-body {
-	width: 100%;
-  height:100%;
-	margin: 0;
-  padding: 0;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+.user {
+  position: relative;
+  float: left;
+  width: 29.3333333%;
+  padding: 4% 2%;
+  margin: 2% 2%;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  transform: translate3d(0px,60px,-60px);
+  opacity: 0;
+  transition: opacity 1.2s, transform 1.0s;
+}
+
+.active {
+  opacity: 1.0;
+  transform: translate3d(0px,0px,0px);
+
+}
