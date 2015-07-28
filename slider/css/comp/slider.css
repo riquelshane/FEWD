@@ -10,11 +10,11 @@
 }
 .slider ul li {
   display: inline-block;
-  width: 100%;
+  width: 90%;
   float: left;
 }
 .slider ul li img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 .slider .left, .slider .right {
