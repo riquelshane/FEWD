@@ -1,0 +1,13 @@
+{
+  "images": [
+      {
+        "url": "img/main/1.jpg"
+      },
+      {
+        "url":"img/main/2.jpg"
+      },
+      {
+        "url":"img/main/3.jpg"
+      }
+  ]
+}
