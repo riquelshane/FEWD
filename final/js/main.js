@@ -10,7 +10,6 @@
 
     var rotator = setInterval(function() {
       var nextImage = $('.main-item.active').next('.main-item');
-      console.log(currentImage);
       if (currentImage == maxImages) {
         currentImage = 1;
         firstImage.addClass('active').siblings().removeClass('active');

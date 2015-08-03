@@ -32,9 +32,9 @@ li {
 }
 
 .tabs {
-    font-family: 'Fjalla One', sans-serif;
     display: inline-block;
-    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
     width: 410px;
     position: absolute;
     left: 50%;
@@ -51,6 +51,7 @@ li {
 .tabs a {
     color: black;
     text-decoration: none;
+
 }
 
 .tabs a:hover {
@@ -58,7 +59,7 @@ li {
 }
 
 .tabs li {
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 .social {
@@ -105,5 +106,69 @@ li {
     opacity: 1;
 }
 
-
 /*CONTACT PAGE*/
+
+.zach-image img {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.contact-info li {
+
+}
+
+.contact-info {
+  margin-top:50px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.content {
+  margin-top: 1%;
+  text-align: center;
+
+}
+
+.about-me  {
+  width: 33%;
+  font-family: 'Raleway', sans-serif;
+  margin:20px auto 0 auto;
+  text-align: left;
+}
+
+/** GALLERY **/
+
+.gallery-list {
+  width:95%;
+  margin:40px auto 0 auto;
+}
+
+.list-item {
+  /*width:200px;*/
+  height:300px;
+  text-align:center;
+  cursor:pointer;
+}
+
+.list-item img {
+  /*min-height:250px;
+  min-width:200px;*/
+  height:100%;
+}
+
+.gallery-large {
+  position:absolute;
+  width:100%;
+  display:none;
+  margin:40px auto;
+}
+
+.large-image img {
+  max-height:800px;
+}
+
+.gallery-close {
+  cursor:pointer;
+  font-size:36px;
+  float:right;
+  font-family:'Verdana',sans-serif;
+}

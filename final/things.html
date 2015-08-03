@@ -8,35 +8,42 @@
 		<title>Leroy Foto</title>
 
 		<!-- external CSS link -->
-    <link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/reset.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/style.css">
 
 	</head>
 	<body>
 		<div id="container">
-      <div class="logo">
-        <img src="img/templogo.jpg">
+			<div class="top">
+        <div class="logo">
+          <img src="img/templogo.jpg">
+        </div>
+        <ul class="tabs">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="places.html">Places</a></li>
+          <li><a href="things.html">Things</a></li>
+          <li><a href="contact.html">Contact / About Me</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="https://instagram.com/zacharyleroy/"><img src="img/IG.jpg" /></a></li>
+          <li><a href="https://twitter.com/zacharyleroy801"><img src="img/TW.jpg" /></a></li>
+          <li><a href="https://www.facebook.com/flashfauxtography"><img src="img/FB.jpg" /></a></li>
+        </ul>
       </div>
-
-
-      <ul class="tabs">
-				<li><a href="index.html">Home</a></li>
-        <li><a href="people.html">People</a></li>
-        <li><a href="places.html">Places</a></li>
-        <li><a href="things.html">Things</a></li>
-        <li><a href="contact.html">Contact / About Me</a></li>
-      </ul>
-
-		
-
-      <ul class="social">
-        <li><a href="https://instagram.com/zacharyleroy/"><img src="img/IG.jpg" /></a></li>
-        <li><a href="https://twitter.com/zacharyleroy801"><img src="img/TW.jpg" /></a></li>
-        <li><a href="https://www.facebook.com/flashfauxtography"><img src="img/FB.jpg" /></a></li>
-      </ul>
-
+			<div class="content">
+				<div class="gallery-large">
+					<div class="gallery-close">X</div>
+					<div class="large-image"><!-- dynamic image --></div>
+				</div>
+				<ul class="gallery-list">
+					<!-- <li class="list-item"><img src="image.jpg" /></li> -->
+				</ul>
+			</div>
 		</div><!-- #container -->
+		<script type="text/javascript" src="js/vendor/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/vendor/packery.pkgd.min.js"></script>
+		<script type="text/javascript" src="js/gallery.js"></script>
+		<script type="text/javascript" src="js/things.js"></script>
 	</body>
 </html>
